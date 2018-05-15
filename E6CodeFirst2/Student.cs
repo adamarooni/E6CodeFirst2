@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace E6CodeFirst2
 {
     public class Student
-    {
+    {   
         [Column("Student ID")]
         public int StudentId { get; set; }
 

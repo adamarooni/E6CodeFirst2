@@ -11,7 +11,8 @@ namespace E6CodeFirst2
     {
         public SchoolContext(): base("SchoolContext")
         {
-
+            //Database.SetInitializer<SchoolContext>(new CreateDatabaseIfNotExists<SchoolContext>());
+            Database.SetInitializer<SchoolContext>(new DropCreateDatabaseAlways<SchoolContext>());
         }
 
         public DbSet<Student> Students { get; set; }
